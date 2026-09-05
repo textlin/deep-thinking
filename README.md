@@ -1,7 +1,7 @@
 ## deep-thinking · 深度思考引导技能
-通过层层审慎的递进式提问，帮助你理清问题或决策背后的本质脉络，挖掘隐藏假设、明确真实目标、权衡潜在代价，最终自己得出答案。
+通过层层审慎的递进式提问，帮助你理清问题或决策背后的本质脉络，挖掘隐藏假设、明确真实目标、权衡潜在代价，最终自己得出答案。当你被想法、决策与困惑困住，难以做出判断、不知如何推进时，不妨体验这款技能。
 
-> Guide a user through careful questioning that helps them uncover the underlying shape of a problem or decision.
+> Guide a user through careful questioning that helps them uncover the underlying shape of a problem or decision.When you are stuck with ideas, decisions or puzzles and struggle to judge or move forward, give this skill a try.
 
 本项目同时提供 **Codex 技能文件** 和 **豆包自定义助手指令** 两套载体，一套逻辑，两处可用。
 
