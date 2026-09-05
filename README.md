@@ -1,2 +1,61 @@
-# deep-thinking
-通过层层审慎提问引导用户，帮助他们理清问题或决策背后的本质脉络。/Guide a user through careful questioning that helps them uncover the underlying shape of a problem or decision.
+deep-thinking・深度思考引导技能
+通过层层审慎的递进式提问，帮助用户理清问题或决策背后的本质脉络，挖掘隐藏假设、明确真实目标、权衡潜在代价，最终自主得出答案。
+Guide a user through careful questioning that helps them uncover the underlying shape of a problem or decision.
+本项目为 Codex 原生技能（Skill），遵循 Codex 技能规范，可直接放入 Codex 技能目录加载使用。
+✨ 核心特性
+苏格拉底式引导：不直接给出结论，通过精准提问推动用户自主思考
+分层递进逻辑：从澄清问题 → 拆分事实 → 挖掘假设 → 溯源本质，逐层深入
+少轮精准提问：每轮仅输出少量问题，每个问题只完成一个思考目标
+情绪友好适配：面对情绪化话题先复述梳理，再平稳推进，不说教、不武断
+Codex 原生兼容：标准 YAML 元数据头部，支持自动识别、精准触发
+📦 项目结构
+plaintext
+deep-thinking/
+├── SKILL.md          # 技能主文件（标准 YAML 头部 + 完整执行逻辑）
+├── agents/
+│   └── openai.yaml   # 可选：技能前端展示元数据
+└── README.md         # 项目说明与使用指南
+
+🚀 快速开始
+1. 放置技能文件
+选择以下任意一种方式部署：
+全局生效（所有项目可用）
+bash
+mkdir -p ~/.codex/skills/deep-thinking
+# 将仓库中的 SKILL.md 复制到该目录下
+
+单项目生效（仅当前项目可用）
+bash
+mkdir -p 你的项目目录/.codex/skills/deep-thinking
+# 将仓库中的 SKILL.md 复制到该目录下
+
+⚠️ 注意：文件名必须保持全大写 SKILL.md，否则 Codex 无法识别加载。
+2. 加载与验证
+重启 Codex 或新建会话，系统会自动扫描技能目录并加载。
+触发测试：输入一个需要深度思考的问题，例如：
+帮我深度思考一下要不要转行做独立开发
+若 AI 开始反问你的核心动机、约束条件、预期目标，而非直接给出结论，即为技能触发成功。
+💡 使用示例
+plaintext
+用户：我要不要辞职去创业？
+
+deep-thinking：
+1. 你现在想辞职的核心原因是什么？是对现状不满，还是被创业的某个机会吸引？
+2. 你心目中的“创业成功”，具体是指达到什么状态？
+3. 如果尝试创业但没有达到预期，你能接受的底线是什么？
+
+🧠 引导逻辑框架
+技能默认遵循四层思考递进路径：
+澄清层：锁定真实问题，区分事实、感受与观点
+拆解层：拆分问题要素，暴露隐含的前提与约束
+溯源层：追问底层动机与第一性原则
+复盘层：总结已有结论，标记剩余开放问题
+⚙️ 自定义调整
+修改触发规则：编辑 SKILL.md 顶部 YAML 中的 trigger.patterns，添加自定义触发关键词；调整 priority 可修改技能匹配优先级
+调整提问风格：修改正文的风格描述段，可切换为更犀利、更温和或更偏向商业分析的语气
+扩展专用场景：可基于核心逻辑扩展出「决策复盘」「创意发散」「自我反思」等专用分支
+配置工具权限：在 YAML 的 allowed-tools 中添加 / 移除技能可调用的工具
+📄 许可证
+MIT License - 可自由使用、修改与分发。
+🤝 贡献
+欢迎提交 Issue 或 PR 来优化引导逻辑、补充更多场景适配。
