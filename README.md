@@ -1,4 +1,123 @@
-#deep-thinking・深度思考引导技能
+抱歉，刚才的版本缺少了更新、卸载和常见问题等实用章节，这里给你**完整无缺、可直接替换 README.md** 的最终版本：
+
+```markdown
+# deep-thinking · 深度思考引导技能
+
+通过层层审慎的递进式提问，帮助用户理清问题或决策背后的本质脉络，挖掘隐藏假设、明确真实目标、权衡潜在代价，最终自主得出答案。
+
+> Guide a user through careful questioning that helps them uncover the underlying shape of a problem or decision.
+
+本项目为 **Codex 原生技能（Skill）**，遵循 Codex 技能规范，可直接放入 Codex 技能目录加载使用。
+
+## ✨ 核心特性
+
+- **苏格拉底式引导**：不直接给出结论，通过精准提问推动用户自主思考
+- **分层递进逻辑**：从澄清问题 → 拆分事实 → 挖掘假设 → 溯源本质，逐层深入
+- **少轮精准提问**：每轮仅输出少量问题，每个问题只完成一个思考目标
+- **情绪友好适配**：面对情绪化话题先复述梳理，再平稳推进，不说教、不武断
+- **Codex 原生兼容**：标准 YAML 元数据头部，支持自动识别、精准触发
+
+## 📦 项目结构
+
+```
+deep-thinking/
+├── SKILL.md          # 技能主文件（标准 YAML 头部 + 完整执行逻辑）
+├── agents/
+│   └── openai.yaml   # 可选：技能前端展示元数据
+└── README.md         # 项目说明与使用指南
+```
+
+## 🚀 快速开始
+
+### 方式一：Git 一键安装（推荐）
+直接将仓库克隆到 Codex 全局技能目录，一步完成安装：
+```bash
+git clone https://github.com/textlin/deep-thinking.git ~/.codex/skills/deep-thinking
+```
+
+安装完成后重启 Codex 或新建会话即可自动加载。
+
+> 若仅需在单个项目中使用，克隆到对应项目的 `.codex/skills/` 目录下即可：
+> ```bash
+> git clone https://github.com/textlin/deep-thinking.git ./your-project/.codex/skills/deep-thinking
+> ```
+
+### 方式二：手动安装
+1. 创建技能目录
+```bash
+# 全局生效（所有项目可用）
+mkdir -p ~/.codex/skills/deep-thinking
+```
+
+2. 下载仓库中的 `SKILL.md` 文件，放入上述目录中
+
+> ⚠️ 注意：文件名必须保持全大写 `SKILL.md`，否则 Codex 无法识别加载。
+
+3. 重启 Codex 或新建会话，系统会自动扫描并加载技能。
+
+### 验证是否生效
+输入一个需要深度思考的问题进行测试，例如：
+> 帮我深度思考一下要不要转行做独立开发
+
+若 AI 开始反问你的核心动机、约束条件、预期目标，而非直接给出结论，即为技能触发成功。
+
+## 🔄 更新与卸载
+
+### 更新到最新版本
+```bash
+cd ~/.codex/skills/deep-thinking
+git pull
+```
+
+### 卸载技能
+```bash
+rm -rf ~/.codex/skills/deep-thinking
+```
+
+## 💡 使用示例
+
+```
+用户：我要不要辞职去创业？
+
+deep-thinking：
+1. 你现在想辞职的核心原因是什么？是对现状不满，还是被创业的某个机会吸引？
+2. 你心目中的“创业成功”，具体是指达到什么状态？
+3. 如果尝试创业但没有达到预期，你能接受的底线是什么？
+```
+
+## 🧠 引导逻辑框架
+
+技能默认遵循四层思考递进路径：
+1. **澄清层**：锁定真实问题，区分事实、感受与观点
+2. **拆解层**：拆分问题要素，暴露隐含的前提与约束
+3. **溯源层**：追问底层动机与第一性原则
+4. **复盘层**：总结已有结论，标记剩余开放问题
+
+## ⚙️ 自定义调整
+
+- **修改触发规则**：编辑 `SKILL.md` 顶部 YAML 中的 `trigger.patterns`，添加自定义触发关键词；调整 `priority` 可修改技能匹配优先级
+- **调整提问风格**：修改正文的风格描述段，可切换为更犀利、更温和或更偏向商业分析的语气
+- **扩展专用场景**：可基于核心逻辑扩展出「决策复盘」「创意发散」「自我反思」等专用分支
+- **配置工具权限**：在 YAML 的 `allowed-tools` 中添加/移除技能可调用的工具
+
+## ❓ 常见问题
+
+**Q: 安装后不触发怎么办？**
+A: 1. 确认文件名是全大写 `SKILL.md`；2. 确认目录路径正确；3. 重启 Codex 或新建会话；4. 尝试使用更明确的触发语，如“用深度思考帮我分析”。
+
+**Q: 可以在其他支持 Skill 的编辑器中使用吗？**
+A: 只要是兼容 OpenAI Skills 规范的编辑器/客户端，理论上都可以直接使用 `SKILL.md`。
+
+## 📄 许可证
+
+MIT License - 可自由使用、修改与分发。
+
+## 🤝 贡献
+
+欢迎提交 Issue 或 PR 来优化引导逻辑、补充更多场景适配。
+```
+
+直接全选复制，替换你仓库里的 `README.md` 即可。#deep-thinking・深度思考引导技能
 
 ###通过层层审慎的递进式提问，帮助用户理清问题或决策背后的本质脉络，挖掘隐藏假设、明确真实目标、权衡潜在代价，最终自主得出答案。
 ###Guide a user through careful questioning that helps them uncover the underlying shape of a problem or decision.
