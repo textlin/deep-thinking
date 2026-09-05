@@ -3,14 +3,20 @@
 
 > Guide a user through careful questioning that helps them uncover the underlying shape of a problem or decision.When you are stuck with ideas, decisions or puzzles and struggle to judge or move forward, give this skill a try.
 
-本项目同时提供 **Codex 技能文件** 和 **豆包自定义助手指令** 两套载体，一套逻辑，两处可用。
+本项目同时提供 **Codex 技能文件** 。
 
 ## ✨ 核心特性
 - **苏格拉底式引导**：不直接给出结论，通过精准提问推动你自主思考
 - **分层递进逻辑**：从澄清问题 → 拆分事实 → 挖掘假设 → 溯源本质，逐层深入
 - **少而精的提问**：每轮只问少量问题，每个问题只完成一个思考目标
 - **情绪友好适配**：面对情绪化话题先复述梳理，再平稳推进，不说教、不武断
-- **双平台兼容**：同时支持 Codex 技能体系与豆包自定义助手
+> ## ✨ Core Features
+> - **Socratic Guidance**: Instead of giving direct answers, it drives you to think independently through targeted questions.
+> - **Hierarchical Progressive Logic**: Dig deeper step‑by‑step: clarify the problem → break down facts → uncover assumptions → trace back to > the essence.
+> - **Concise Questioning**: Only a small number of questions per round, with each question serving one single thinking goal.
+> - **Emotion‑friendly Adaptation**: Restate and sort out emotional topics first before moving forward calmly, without preaching or arbitrary > judgment.
+-  **Dual‑platform Compatibility**: Supports both the Codex skill system and Doubao custom assistants.
+
 
 ## 📦 项目结构
 ```
