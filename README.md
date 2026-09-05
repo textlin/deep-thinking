@@ -15,7 +15,6 @@
 > - **Hierarchical Progressive Logic**: Dig deeper step‑by‑step: clarify the problem → break down facts → uncover assumptions → trace back to > the essence.
 > - **Concise Questioning**: Only a small number of questions per round, with each question serving one single thinking goal.
 > - **Emotion‑friendly Adaptation**: Restate and sort out emotional topics first before moving forward calmly, without preaching or arbitrary > judgment.
--  **Dual‑platform Compatibility**: Supports both the Codex skill system and Doubao custom assistants.
 
 
 ## 📦 项目结构
