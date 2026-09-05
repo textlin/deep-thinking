@@ -1,15 +1,16 @@
-deep-thinking・深度思考引导技能
-  通过层层审慎的递进式提问，帮助用户理清问题或决策背后的本质脉络，挖掘隐藏假设、明确真实目标、权衡潜在代价，最终自主得出答案。
-  Guide a user through careful questioning that helps them uncover the underlying shape of a problem or decision.
+#deep-thinking・深度思考引导技能
 
-本项目为 Codex 原生技能（Skill），遵循 Codex 技能规范，可直接放入 Codex 技能目录加载使用。
+###通过层层审慎的递进式提问，帮助用户理清问题或决策背后的本质脉络，挖掘隐藏假设、明确真实目标、权衡潜在代价，最终自主得出答案。
+###Guide a user through careful questioning that helps them uncover the underlying shape of a problem or decision.
+
+##本项目为 Codex 原生技能（Skill），遵循 Codex 技能规范，可直接放入 Codex 技能目录加载使用。
 
 ✨ 核心特性
-苏格拉底式引导：不直接给出结论，通过精准提问推动用户自主思考
-分层递进逻辑：从澄清问题 → 拆分事实 → 挖掘假设 → 溯源本质，逐层深入
-少轮精准提问：每轮仅输出少量问题，每个问题只完成一个思考目标
-情绪友好适配：面对情绪化话题先复述梳理，再平稳推进，不说教、不武断
-Codex 原生兼容：标准 YAML 元数据头部，支持自动识别、精准触发
+###苏格拉底式引导：不直接给出结论，通过精准提问推动用户自主思考
+###分层递进逻辑：从澄清问题 → 拆分事实 → 挖掘假设 → 溯源本质，逐层深入
+###少轮精准提问：每轮仅输出少量问题，每个问题只完成一个思考目标
+###情绪友好适配：面对情绪化话题先复述梳理，再平稳推进，不说教、不武断
+###Codex 原生兼容：标准 YAML 元数据头部，支持自动识别、精准触发
 📦 项目结构
 plaintext
 deep-thinking/
